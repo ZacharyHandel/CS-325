@@ -1,0 +1,26 @@
+.input-form {
+    background-color: lightseagreen;
+    padding: 20px;
+    max-width: 350px;
+    text-align: right; /* Align the text within the form to the right */
+}
+
+.input-form label {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: right; /* Align the text labels to the right */
+}
+
+.input-box {
+    margin: auto;
+    width: 30%;
+    text-align: center; /* Center the input box within its parent */
+}
+
+.input-form h1 {
+    text-align: center;
+}
+
+.result {
+    max-width: 390px;
+}

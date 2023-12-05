@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Payment Calculator</title>
+</head>
+<body>
+    <div class="input-box">
+        
+        <form class="input-form">
+            <h1>Auto Loan Calculator</h1>
+            <hr>
+            <label for="purchase-price">Purchase price: </label>
+            <input type="text" id="purchase-price" name="purchase-price" required><br>
+            <label for="cash-rebate">Cash rebate: </label>
+            <input type="text" id="cash-rebate" name="cash-rebate" required><br>
+            <label for="trade-in-value">Trade in value: </label>
+            <input type="text" id="trade-in-value" name="trade-in-value" required><br>
+            <label for="amount-owed">Amount owed on trade-in: </label>
+            <input type="text" id="amount-owed" name="amount-owed" required><br>
+            <label for="down-payment">Down payment: </label>
+            <input type="text" id="down-payment" name="down-payment" required><br>
+            <label for="annual-interest-rate">Annual interest rate: </label>
+            <input type="text" id="annual-interest-rate" name="annual-interest-rate" required><br>
+            <label for="loan-term">Loan term (months): </label>
+            <input type="text" id="loan-term" name="loan-term" required><br>
+            <hr>
+            <div class="button-section">
+                <button type="button" id="clear-button">Clear</button>
+                <button type="button" id="calculate-button">Calculate</button>
+            </div>
+        </form>
+        <div class="result">
+            <p>Monthly Car Payment = $<span id="result-payment">0.00</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

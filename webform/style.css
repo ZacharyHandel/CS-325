@@ -1,0 +1,25 @@
+body {
+    background-color: lightsteelblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    margin: 0.5em;
+}
+
+.centeredform {
+    margin-left: 33%;
+    margin-right: auto;
+    width: 30%;
+    padding: 1.5em;
+    border: solid 1px black;
+    background-color: lightgrey;
+}
+
+.buttons {
+    float: right;
+    border-style: outset;
+}

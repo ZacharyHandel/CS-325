@@ -1,0 +1,17 @@
+New Car
+- purchase price: 30000
+- down: 1000
+- Rebate: 500
+Current Car
+- tade: 5000
+- owe: 1000
+
+Calculation
+30000
+-500 rebate
+-5000 trade
++1000 owe
+-1000 down
+
+----------
+24,500

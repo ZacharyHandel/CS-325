@@ -1,0 +1,65 @@
+.center {
+	margin: auto;
+	width: 50%;
+	padding: 1em;
+	background-color: hotpink;
+	overflow: auto;
+}
+
+.tag {
+	font-size: small;
+	font-weight: 100;
+	font-style: italic;
+}
+form {
+	border: solid 1px black;
+	align-items: center;
+	justify-content: center;
+}
+
+form label {
+    font-size: 0.5em;
+    margin-right: 10px; /* Add margin to the right of the label */
+}
+
+input[type="number"] {
+    margin-right: 10px; /* Add margin to the right of the input */
+}
+
+button {
+    margin-left: 300px; /* Add margin to the left of the button */
+}
+
+h1{
+	text-align: center;
+	color: black;
+	font-weight: bolder;
+	font-family: sans-serif;
+}
+
+.items-display {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.item {
+	background-color: yellow;
+	padding: 5px;
+	border: 1px solid gold;
+}
+
+#play-again {
+	font-size: small;
+	text-decoration: none;
+	color: black;
+	background-color: lightgray; 
+}
+
+#free-prize {
+	font-weight: small;
+	font-size: small;
+}

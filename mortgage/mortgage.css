@@ -1,0 +1,33 @@
+body {
+	background-color: aliceblue;
+	font-size: 1.5em;
+}
+
+h1 {
+	text-align: center;
+}
+
+br {
+	line-height: 2em;
+}
+
+select {
+	border: 2px outset;
+	border-radius: 5px;
+}
+
+#box {
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+}
+
+
+.right {
+	float: right;
+}
+
+.button {
+	border: 1px solid;
+	border-radius: 10px;
+}

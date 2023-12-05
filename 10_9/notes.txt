@@ -1,0 +1,5 @@
+- _SERVER is a superglobal array that contains all the request headers.
+	- See MAN if you really care about the other things
+- For this app, we want the REQUEST_METHOD
+
+

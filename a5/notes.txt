@@ -1,0 +1,28 @@
+Notes
+*****
+
+- Input is the amount of money wished to bet <1000.1
+- When play is clicked, PHP program will randomly select words using random_int()
+	- Cherries
+	- Oranges
+	- Plums
+	- Bells
+	- Melons
+	- Bars
+
+- Result is determined as follows:
+	- No words match: loss
+	- Two words match: 2x
+	- Three words match: 3x
+- After each play, WIN or LOSE shouldbe displayed along with the amount won (if won).
+- Separate html into header, middle, and footer.
+	- Header through PHP function
+	- Footer through separate PHP function.
+	- Middle is the form. Middle of form in "display page" function and middle of response in "process form"
+
+
+Functions:
+- display header (don't use 'header()')
+- display footer
+- display form
+- display response

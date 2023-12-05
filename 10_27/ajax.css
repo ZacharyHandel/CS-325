@@ -1,0 +1,16 @@
+body {
+	background-color: gray;
+}
+
+button {
+	color: blue;
+	margin-left: 45%;
+	margin-right: 45%;
+	margin-top: 2em;
+}
+
+#messagetext {
+	padding: 2em;
+	border: 1px solid black;
+	color: darkgreen;
+}

@@ -1,0 +1,26 @@
+<?php
+	require("heading.php");
+	displayList();
+	require("footing.php");
+//---------------------------------------------
+function displayList()
+{
+	$background = 0;
+	
+	echo <<<HTMLBLOCK
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Prduction Years</th>
+				<th>Range</th>
+			<tr>
+
+HTMLBLOCK;	
+
+	//connect to db
+	//build query and execute
+	//iterate over the result (rowset)
+
+	echo "		</table>";
+}
+?>

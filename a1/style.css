@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Rubik', sans-serif;
+    background-color: lightgray;
+}
+header {
+    background-color: rgb(127, 160, 182);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+    font-size: 1.25em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(180, 180, 180);
+}
+
+.homepage-container {
+    display: flex;
+    align-items: right;
+}
+
+.profile-pic {
+    width: 750px;
+    height: auto;
+    opacity: 0;
+    animation: fadeInAnimation ease 1.25s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+}
+
+.homepage-text {
+    font-size: 3em;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+    opacity: 0;
+    animation: fadeInAnimation ease 1.25s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+}
+
+.bold-homepage-text {
+  font-weight:900;
+  font-size: 2em;
+  font-style: italic;
+}
+
+.paragraph-text {
+    font-size: 1.5em;
+    padding-left: 20px;
+}
+
+.header-one {
+    font-size: 4em;
+}
+
+#bio-greeting {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;   
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.bio-pictures {
+    border-radius: 10%;
+    width: 600px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid black;
+    margin: 20px 0;
+}
+
+.resume-text {
+    text-align: center;
+}
+
+.resume-paragraph {
+    font-size: 1.5em;
+}

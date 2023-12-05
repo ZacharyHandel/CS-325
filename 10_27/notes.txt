@@ -1,0 +1,64 @@
+We want to modify whats already displayed in the browser
+	- DOM
+		- Using JS to add and remove stuff without redrawing the whole page
+		- We can send data to server and recieve a response without having to redraw the whole page
+		- The technology is called AJAX
+
+AJAX - Asynchronous JavaScript and XML (back then)
+- 2005
+- What was then a brand new service in different applications
+- Made web more interactive
+- Today, we will use JS but not XML
+- Browser based
+- Messages exchanged between web broswer and web server using JS and some server side script like PHP and it will be async
+	- We won't be blocked (removes this constraint)
+
+XMLHttpRequest Object in JS
+- allows web browser to communicate asynchronously with the server
+- We will not block waiting on the response
+- When it DOES come in is when we will process the response
+- Since we are not waiting, we need to create a callback function
+	- looks likea regular function
+	- When we create it, we associate it with a particular event/call
+	- When said event occurs the function runs
+	- stop, callback function, continue
+		- This is not a block
+- Steps:
+	1. Create an instance of the XMLHttpRequest object
+	var xhr = new XMLHttpRequest();
+	
+	2. Use the open() method to specify the type of data to be send and the destination of the data
+	xhr.open('GET', 'shop.php?productID=34') //Just an example, nothing specific
+	
+	3. Create a callback function to handle the data returned by the server
+	xhr.opreadystatechange = callbackfunction;	//not calling function, but saying this funciton will be called when the event happens
+	
+	4. Send the request to the server
+	xhr.send(null);	//GET method
+
+	xhr.send('productID=34');	//POST method
+
+	5. receive and handle the response
+	if(xhr.state === 200) {
+		//everything is good, process the response
+	} else {
+		//problem, handle the error
+	}
+
+	xhr.responseText	//returns the text
+	xhr.responseXML 	/returns the XML (we will not use this)
+
+try catch
+
+function simpleCallback(xhr) {
+	try {
+		if((xhr.readystate === 4) && (xhr.status === 200))
+			alert(xhr.responseText);
+		else
+			alert('The server is not finished or indicated a problem');
+	} catch(e) {
+		alert('Caught exception: ' + e.description);
+	}
+}
+
+SEE HIS LINK TO FIX: cs.csis.work/~jjerkins/ajax/ajax.html

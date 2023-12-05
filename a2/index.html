@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Speed Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Recreational Boat Speed Calculator</h1>
+    <form id="calculator-form">
+        <div class="input-group">
+            <label for="boat-weight">Boat Running Weight (lbs):</label>
+            <input type="text" id="boat-weight" name="boat-weight" required>
+        </div>
+        <div class="input-group">
+            <label for="horsepower">Total Motor Shaft Horsepower:</label>
+            <input type="text" id="horsepower" name="horsepower" required>
+        </div>
+        <div class="description-group">
+            <div class="description-option">
+                <h4>Heavy V Bottom</h4>
+                <p>Low drive height, cabin cruiser, side by side engines</p>
+            </div>
+            <div class="description-option">
+                <h4>Fast V Bottom</h4>
+            <p>High drive height, notched transom</p>
+            </div>
+            <div class="description-option">
+                <h4>Catamaran</h4>
+                <p>Multi-hull, pleasure cruiser</p>
+            </div>
+            <div class="description-option">
+                <h4>Fast Catamaran</h4>
+                <p>Multi-hull, racing type rigged for speed</p>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="hull-type">Hull Type:</label>
+            <select id="hull-type" name="hull-type" required>
+                <option value="heavy-v-bottom" >Heavy V Bottom</option>
+                <option value="fast-v-bottom" >Fast V bottom</option>
+                <option value="catamaran" >Catamaran</option>
+                <option value="fast-catamaran" >Fast Catamaran</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <button type="button" id="calculate-button">Calculate Speed</button>
+        </div>
+        <br>
+        <div class="input-group">
+            <button type="button" id="reset-input-button">reset input</button>
+        </div>
+        <div class="result">
+            <p>Estimated Maximum Speed: <span id="result-speed">0</span></p>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+<script src="app.js"></script>
+</html>

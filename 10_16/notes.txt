@@ -1,0 +1,22 @@
+Web is stateless
+- Web server doesn't keep track / store any state information about client connections
+- HTTP 1.1
+	- Dominos Analogy
+- We will have to do something about the web being stateless
+	- To have a state, information has to be stored
+	- First approach: lets make the client keep up with the information and send it back to the server any time we reconnect
+		- THIS is cookies
+		- Little note of text that the server has asked the client to keep up with.
+
+2 Possible Solutions to web being stateless:
+- Client Stores Info
+	- Cookies
+		- Organized as name value pairs
+		- Server requests that client stores the cookies
+		- Client will always send cookies they have with requests
+		- Always get sent to domain that requested the cookie in the first place
+- Server Stores Info
+
+We need a way to do this in PHP (see file)
+
+
